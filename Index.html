@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conferência de Nota Fiscal</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    .ok { color: green; font-weight: bold; }
+    .pendente { color: red; font-weight: bold; }
+    input[type="text"] { width: 100%; padding: 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<h2>Conferência de Nota Fiscal</h2>
+
+<p><strong>Número da NF:</strong> <span id="nota">-</span></p>
+<p><strong>Cliente:</strong> <span id="cliente">-</span></p>
+
+<h3>Produtos da Nota</h3>
+<table id="tabelaProdutos">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Nome</th>
+      <th>Quantidade NF</th>
+      <th>Lido</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<input type="text" id="inputCodigo" placeholder="Leia o código de barras..." autofocus />
+
+<script src="xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

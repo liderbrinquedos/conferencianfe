@@ -1,0 +1,7 @@
+/conferencia/
+│
+├── index.html
+├── script.js
+├── xlsx.full.min.js
+├── produtos.xlsx
+└── nfe.xlsx
